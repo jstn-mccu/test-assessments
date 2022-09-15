@@ -1,0 +1,346 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form Test</title>
+  </head>
+  <header>
+    <h1 id="title" class="title">freeCodeCamp Survery Form</h1>
+    <p id="description" class="title-desc">
+      <em>Thank you for taking the time to help us improve the platform</em>
+    </p>
+  </header>
+  <main>
+    <body class="body">
+      <fieldset class="form-body">
+        <form id="survey-form" action="https://www.freecodecamp/form-response">
+          <fieldset class="name">
+            <label id="name-label" name="name-label">
+              Full Name 
+                <input type="text" id="name" placeholder="Enter your name" required class="text-area" />
+            </label>
+          </fieldset>
+          <fieldset class="email">
+            <label id="email-label" name="email-label">
+              Email
+                <input type="email" id="email" placeholder="Enter your email" required class="text-area" />
+            </label>
+          </fieldset>
+          <fieldset class="age">
+            <label id="number-label" name="number-label">
+              Age <i>(optional)</i>
+                <input type="number" id="number" min="13" max="120" placeholder="Select your age"required class="text-area" />
+            </label>
+          </fieldset id="drop-down">
+          <fieldset class="select">
+            <p>Which option best describes your current role?
+            </p>
+            <select id="dropdown" name="current-role" required>
+              <option value="" name="select current role">
+                Select current role
+              </option>
+              <option value="student" name="student">
+                Student
+              </option>
+              <option value="full time job" name="full time job">
+                Full Time Job
+              </option>
+              <option value="full time learner" name="full time leaner">
+                Full Time Learner
+              </option>
+              <option value="prefer not to say" name="prefer not to say">
+                Prefer not to say
+              </option>
+              <option value="other" name="other">
+                Other
+              </option>
+            </select>
+          <p>If you selected <em>"other"</em> please provide more details
+          </p>
+            <textarea name="comment" rows="1" cols="30" placeholder="Enter your comment here..." class="comment-area">
+            </textarea>
+          </fieldset>
+          <fieldset class="radio">
+            <p>Would you recommend freeCodeCamp to a friend?
+            </p>
+            <label>
+              <input type="radio" value="Definitely" name="value" required checked />
+                Definitely
+            </label>
+            <label>
+              <input type="radio" value="Maybe" name="value" required />
+                Maybe
+            </label>
+            <label>
+              <input type="radio" value="Not sure" name="value" required />
+                Not sure
+            </label>
+          </fieldset>
+          <fieldset class="radio">
+            <p>Who would you recommend freeCodeCamp to?
+            </p>
+            <label>
+              <input type="radio" value="Friend" name="value" required />
+                Friend
+            </label>
+            <label>
+              <input type="radio" value="Co-Worker" name="value" required />
+                Co-Worker
+            </label>
+            <label>
+              <input type="radio" value="Other" name="value" required />
+                Other
+            </label>
+          </fieldset>
+            <fieldset class="select">
+            <p>What is your favorite feature of freeCodeCamp?
+            <p> 
+            <select name="favorite feature" required>
+              <option value="" name="select an option">
+                Select an option
+              </option>
+              <option value="challenges" name="challenges">
+                Challenges
+              </option>
+              <option value="projects" name="projects">
+                Projects
+              </option>
+              <option value="community" name="community">
+                Community
+              </option>
+              <option value="open source" name="open source">
+                Open Source
+              </option>
+            </select>
+          </fieldset>
+          <fieldset class="checkbox">
+          <p>What would you like to see improved? <i>(Check all that apply)</i>
+          </p>
+            <label>
+              <input type="checkbox" value="front-end projects" />
+                Front-end Projects
+            </label>
+            <label>
+              <input type="checkbox" value="back-end projects" />
+                Back-end Project
+            </label>
+            <label>
+              <input type="checkbox" value="data visualization" />
+                Data Visualization</label>
+            <label>
+              <input type="checkbox" value="challenges" />
+                Challenges
+            </label>
+            <label>
+              <input type="checkbox" value="open source communities" />
+                Open Source Community
+            </label>
+            <label>
+              <input type="checkbox" value="gitter help rooms" />
+                Gitter help rooms
+            </label>
+            <label>
+              <input type="checkbox" value="videos" />
+                Videos
+            </label>
+            <label>
+              <input type="checkbox" value="city meetups" />
+                City Meetups
+            </label>
+            <label>
+              <input type="checkbox" value="wiki" />
+                Wiki
+            </label>
+            <label>
+              <input type="checkbox" value="forum" />
+                Forum
+            </label>
+            <label>
+              <input type="checkbox" value="additional courses" />
+                Additional Courses
+            </label>
+          </fieldset>
+          <fieldset>
+          <p>Any comments or suggestions?
+          </p>
+            <textarea rows="3" cols="30"placeholder="Enter your comment here..." class="comment-area">
+            </textarea>
+          </fieldset>
+          <fieldset>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+      </fieldset>
+    </body>
+  </main>
+  <footer>
+    <p>To learn more visit <a href="https://www.freecodecamp.org">freecodecamp.org</a> and explore!
+    </p>
+    <section>All rights are owned and managed by freeCodeCamp.
+    </section>
+    <section>The content expressed in this document is for educational purposes only.
+    </section>
+    <section>Created by <strong><a href="https://www.freecodecamp.org/jstn-mc">user: jstn-mc</strong></a>.
+    </section>
+  </footer>
+</html>
+
+
+<!--CSS stylesheet below-->
+
+
+header {
+  width: 69.5vw;
+  max-width: 900px;
+  min-width: 700px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: normal;
+  background-color: #00a4b4cc;
+  border: 3px solid #ffffff;
+  border-radius: 100px 100px 5px 40px;
+}
+
+body {
+  background-color: #001440;
+  font-family: Arial;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+p, .name, .email, .age {
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+}
+
+i {
+  font-size:17px;
+}
+
+form {
+  width: 70vw;
+  max-width: 900px;
+  min-width: 700px;
+  margin: auto;
+  background-color: #3c5291;
+  padding: 1rem;
+  border: 3px solid #00a4b4cc;
+  border-radius: 40px 5px;
+}
+
+fieldset {
+ border: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+footer {
+  width: 69.5vw;
+  max-width: 900px;
+  min-width: 700px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  font-color: #ffffff;
+  font-size: 17px;
+  font-weight: normal;
+  border: 3px solid #ffffff;
+  background-color: #00a4b4cc;
+  border-radius: 5px 40px 100px 100px;
+}
+
+a {
+  color: #111111;
+  font-weight: bold;
+}
+
+/* class family */
+
+.title-desc {
+  font-size: 23px;
+}
+
+.form-body {
+   margin: 5;
+   border: none;
+   border-radius: 25px 0;
+}
+
+.text-area {
+   background-color: #bfcfff;
+   margin: 10px 0 0 0;
+   width: 100%;
+   font-size: 17px;
+}
+
+.comment-area {
+  background-color: #bfcfffcc;
+  margin: 0 0.5em 0.5em 0;
+  width: 100%;
+  max-width: auto;
+  min-width: auto;
+  font-size: 17px;
+  color: #001440;
+  border: none;
+}
+
+.age, .select, .radio, .checkbox {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 3px solid #00a4b4cc;
+  border-left: 0px;
+}
+
+/* input dispays */
+
+input[type="text"], input[type="email"], input[type="number"]{
+  display: block;
+  width: 100%;
+  height: 30px;
+  min-width: 100%;
+  padding: 1em;
+  font-size: 15;
+  font-weight: bold;
+  color: #001440;
+  border: none;
+}
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 30px;
+  min-width: 100%;
+  padding-left: 0.5em;
+  background-color: #bfccff;
+  font-family: Arial;
+  color:
+  font-weight: bold;
+  font-size: 17px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  height: 1.1em;
+  width: 1em;
+}
+
+input[type="submit"] {
+  display: block;
+  verticle-align: middle;
+  width: 50%;
+  margin: auto;
+  height: 50px;
+  min-width: 200px;
+  color: #ffffff;
+  background-color: #001440;
+  font-size: 20px;
+  border: solid 4px #00a4b4cc;
+}
